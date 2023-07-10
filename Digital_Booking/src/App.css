@@ -1,0 +1,1465 @@
+.App {
+	box-sizing: border-box;
+
+}
+
+.layout {
+	display: flex;
+	flex: 1 1 0%;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* ------------ Header ------------ */
+
+.header {
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+	width: 100%;
+	top: 0;
+	z-index: 2	;
+	height: auto;
+	position: fixed;
+}
+
+.navBar {
+	overflow: hidden;
+	position: relative;
+}
+
+.link-logo {
+	text-decoration: none;
+	color: black;
+}
+
+.logo {
+	margin: 0.5em 0 0.3em 0.5em
+}
+
+.parrafo-header {
+	display: inline-block;
+	margin-left: 0.5em;
+	margin-bottom: 0;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	float: right;
+	margin: 1em;
+	border-radius: 0.3em;
+	border: 2px solid #F9C33C;
+	width: 12em;
+	background-color: #FFFBE2;
+	color: #F9C33C;
+	cursor: pointer;
+	padding: 0.5em;
+	
+}
+
+.menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu li{
+	color: #F9C33C;
+	background-color: #FFFBE2;
+	border: 2px solid #F9C33C;
+	border-radius: 0.3em;
+	width: 10em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 0.2em;
+	cursor: pointer;
+}
+
+.material-symbols-outlined {
+	color: black;
+	font-size: 2em;
+	border-radius: 0.3em;
+	cursor: pointer;
+	float: right;
+	position: absolute;
+	right: 0.7em;
+	top: 0.5em;
+	display: none;
+}
+
+/* ------------ Main Home ------------ */
+
+.main-home {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-top: 4.8em
+}
+
+/* ------------ Footer ------------ */
+
+.footer {
+	background-color: #FBC02D;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 100%;
+	font-size: 13px;
+}
+
+.logoSlogan {
+	display: flex;
+}
+
+.Pfooter {
+	margin-top: 35px;
+
+}
+
+.copyright {
+	display: inline-block;
+	margin: 0;
+	margin-left: 20px;
+	margin-top: 35px;
+
+}
+
+/* ------------ Search and Calendar ------------ */
+
+.search-div {
+	background-color: #FBC02D;
+	text-align: center;
+	padding-bottom: 26px;
+}
+
+.search-div form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.search-div>h1 {
+	color: white;
+	font-size: 2em;
+	padding: 0.5em 0 0.5em;
+	margin: 0;
+}
+
+.search-div select {
+	height: 2.5em;
+	width: 15em;
+	/* margin-right: 0.5em; */
+	border-radius: 0.5em;
+}
+
+.search-input.text {
+	border: 2px solid white;
+}
+
+.search-input.calendar {
+	border: 3px solid white;
+}
+
+.search-button {
+	width: 12.875em;
+	height: 2.9em;
+	color: #4F4F50;
+	background-color: #FFFBE2;
+	border: 1px solid #FFFBE2;
+	border-radius: 5px;
+	margin-left: 1em;
+	cursor: pointer;
+}
+
+/* ------------ Search by Category ------------ */
+
+.search-category {
+	background-color: white;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
+	padding-bottom: 2.5em;
+}
+
+.search-category>h2 {
+	font-size: 1.5em;
+	font-weight: 400;
+	margin: 0.4em 0 0.4em;
+	padding-left: 0.8em;
+}
+
+.search-category .category-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 5px;
+}
+
+/* ------------ Recomendations ------------ */
+
+.recomendations {
+	background-color: rgb(235, 235, 235);
+	padding: 0.4em 2.5em 2.5em 2.5em;
+}
+
+.recomendations>h2 {
+	font-size: 1.5em;
+	font-weight: 400;
+	margin: 0 0 0.4em;
+	padding-left: 0.8em;
+}
+
+.recomendations .recomendation-cards {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+
+.div-cardRecomend {
+	display: flex;
+	background-color: white;
+	border-radius: 10px;
+	width: 39.6875em;
+}
+
+.div-cardRecomend img {
+	/* min-height: 13em;
+	max-height: 16em;
+	max-width: 17.8125em; */
+	max-height: 16.875em;
+	width: 19.375em;
+	border-radius: 10px 0 0 10px;
+}
+
+.div-cardRecomend .info-cardRecomend {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	overflow: hidden;
+}
+
+.info-cardRecomend>h3 {
+	font-size: 1.2em;
+	margin-left: 1em;
+	margin-bottom: 0;
+	color: #383B58;
+}
+
+/* .info-cardRecomend>span {
+	position: absolute;
+	top: 1.6em;
+	right: 1.3em;
+	color: #383B58;
+	font-size: 0.8em;
+}
+
+.info-cardRecomend>span>.punctuationNumber {
+	border: 8px solid #383B58;
+	color: white;
+	background-color: #383B58;
+	border-radius: 50px;
+	font-size: 1.5em;
+} */
+
+.info-cardRecomend>p {
+	margin: 0 1em 0 1em;
+	color: #383B58;
+}
+
+.info-cardRecomend>button {
+	width: 18.5em;
+	height: 2.5em;
+	margin-left: 2.875em;
+	background-color: #FBC02D;
+	border: 1px solid #FBC02D;
+	border-radius: 0.3em;
+	color: white;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+
+/* ------------ Card ------------ */
+
+.card {
+	box-shadow: 0px 2px rgb(192, 192, 192);
+	border-radius: 0 0 10px 10px;
+	cursor: pointer;
+}
+
+/* .card > a > img {
+	border-radius: 10px 10px 0 0;
+	width: 310px;
+} */
+
+.card>img {
+	border-radius: 10px 10px 0 0;
+	width: 19.375em;
+}
+
+/* .card > .link-cards {
+	text-decoration: underline;
+	color: black;
+} */
+
+/* .card > .link-cards > p:first-of-type {
+	margin-top: 0.7em;
+}
+
+.card > .link-cards > p {
+	padding-left: 0.7em;
+} */
+
+.card>p:first-of-type {
+	margin-top: 0.7em;
+}
+
+.card>p {
+	padding-left: 0.7em;
+}
+
+
+/* ------------ Add Product ------------ */
+
+.detail-main-reserva{
+	display: flex;
+	justify-content:space-around ;
+	align-items: center;
+}
+/* ------------ Politicas Reserva------------ */
+.contenedorPoliticas-reserva{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	gap: 2px
+}
+
+.politicas-reserva h3 {
+	font-size: 1.5em;
+	color: #383B58;
+}
+
+.contenedorPoliticas-reserva h4 {
+	color: #383B58;
+}
+
+.contenedorPoliticas-reserva p {
+	font-size: 0.8em;
+}
+
+.one-reserva img {
+	height: 50vh;
+
+}
+
+.calendar-container-reserva{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+/* ------------ Add Product ------------ */
+
+.container-addProduct {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-top: 4.5625em;
+}
+
+.container-addProduct > .span-volver {
+	font-size: 1em;
+	margin-right: 1em;
+	text-align: right;
+	text-decoration: underline;
+	color: #FBC02D;
+	cursor: pointer;
+}
+
+.container-addProduct>h1 {
+	margin-top: 2em;
+	margin-bottom: 1em;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 400;
+	color: #FBC02D;
+}
+
+.form-addProduct {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1em;
+}
+
+.form-addProduct input {
+	width: 28.125em;
+	height: 2.5em;
+	border-radius: 0.3em;
+	border: 1px solid black;
+	margin-bottom: 0.5em;
+}
+
+.form-addProduct select {
+	width: 28.53em;
+	height: 2.8em;
+	margin-bottom: 0.5em
+}
+
+.form-addProduct button {
+	width: 12.875em;
+	height: 2.5em;
+	background-color: #FBC02D;
+	color: white;
+	border: 0px solid #FBC02D;
+	border-radius: 0.3em;
+	margin-top: 1em;
+}
+
+.rmsc {
+	--rmsc-h: 37px
+}
+
+/* ------------ Detail ------------ */
+
+.detail-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1;
+	margin: 4.5625em 4.5625em 0 4.5625em;
+}
+
+.card-detail {
+	border: 10px solid #FBC02D;
+	border-radius: 1em;
+	width: 19.375em;
+	padding: 10px;
+}
+
+.card-detail > img {
+	width: 19.375em;
+	height: 200px;
+}
+
+.card-detail > h2 {
+	font-size: 1.2em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	color: #383B58;
+}
+
+.card-detail > p {
+	font-size: 0.8em;
+	color: #383B58;
+}
+
+.precio {
+	font-weight: bold;
+	font-size: 2em;
+	text-decoration: underline	;
+}
+
+/* .card-detail > button {
+	color: black;
+	font-weight: bold;
+	background-color: #FBC02D;
+	border-radius: 0.3em;
+	border: 1px solid #FBC02D;
+	width: 10em;
+	height: 2em;
+	margin-left: 29px;
+} 
+*/
+
+.card-detail > .div-buttonsDetail > button {
+	color: black;
+	font-weight: bold;
+	background-color: #FBC02D;
+	border-radius: 0.3em;
+	border: 1px solid #FBC02D;
+	width: 10em;
+	height: 2em;
+	margin: 0 0.8em 0 0.8em;
+	cursor: pointer;
+}
+
+.caracteristicas > p {
+	text-decoration: underline;
+}
+
+.caracteristicas > ol{
+	display: flex;
+	gap: 4.8em;
+}
+
+.available-dates {
+	margin-top: 3em;
+}
+
+.reserva-container {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.button-reserva {
+	margin: 1em;
+	border-radius: 0.3em;
+	border: 2px solid #F9C33C;
+	width: 13.875em;
+	height: 2.8em;
+	background-color: #FFFBE2;
+	color: #F9C33C;
+	cursor: pointer;
+	margin-right: 15em;
+}
+
+.loading-message-detail {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1em;
+}
+
+.loading-message-detail > h2 {
+	color: #383B58;
+}
+
+/* ------------ Reservation ------------ */
+
+.reservation-main {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-top: 5.5625em;
+}
+
+.reservation-main .loading-message-detail {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10em;
+}
+
+.reservation-main > .span-volver {
+	font-size: 1em;
+	margin-right: 1em;
+	text-align: right;
+	text-decoration: underline;
+	color: #FBC02D;
+	cursor: pointer;
+}
+
+.reservation-main > h1 {
+	padding-left: 1.25em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 2em;
+	font-weight: 400;
+	color: #FBC02D;
+}
+
+.politicas-reserva {
+	padding: 0 2.5em 0 2.5em;
+}
+
+.available-dates-reserva {
+	padding: 2.5em;
+}
+
+.available-dates-reserva > h2 {
+	font-size: 1.25em;
+	color: #383B58;
+}
+
+.available-dates-reserva > h3 {
+	font-size: 1em;
+	color: #383B58;
+	margin-bottom: 2.3em;
+	margin-left: 0.8em;
+}
+
+.form-dataReservation {
+	display: flex;
+	flex-direction: row;
+	/* gap: 0.5em; */
+}
+
+.formContainer-reservation > h2 {
+	font-size: 1.25em;
+	color: #383B58;
+}
+
+.form-dataReservation input {
+	margin-right: 10px;
+	margin-bottom: 0.75em;
+	width: 17.125em;
+	height: 2.5em;
+	border-radius: 0.3em;
+	border: 1px solid black;
+}
+
+/* ------------ Reservations ------------ */
+
+.reservations-main {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-top: 4.5625em;
+}
+
+.reservations-main > h1 {
+	margin: 1em 1em 1em 1.75em;
+	font-size: 1.5em;
+	font-weight: 400;
+	color: #FBC02D;
+}
+
+.container-reservas {
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1em;
+	padding: 0 2.5em 2.5em 2.5em;
+}
+
+.everyReserva {
+	border-radius: 10px;
+	border: 2px solid #FBC02D;
+	padding: 0 1em 1em 1em;
+	box-shadow: 0px 2.5px #FBC02D;
+	width: 300px;
+}
+
+.everyReserva > h2 {
+	color: #383B58;
+	text-decoration: underline;
+}
+
+.loading-message {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 8em;
+}
+
+.loading-message > h2 {
+	color: #383B58;
+}
+
+.container-noReserva {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 8em;
+}
+
+.container-noReserva > h2 {
+	color: #383B58;
+}
+
+/* ------------ Register ------------ */
+
+.register-main {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-top: 10.5625em;
+}
+
+.register-main > h1 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 400;
+	color: #FBC02D;
+}
+
+.form-registry {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+
+.form-registry input {
+	width: 28.125em;
+	height: 2.5em;
+	border-radius: 0.3em;
+	border: 1px solid black;
+	margin-bottom: 10px;
+}
+
+.container-fieldTwo > select{
+	width: 28.500em;
+	height: 3.5em;
+	border-radius: 0.3em;
+}
+
+.container-button > button {
+	width: 12.875em;
+	height: 2.5em;
+	background-color: #FBC02D;
+	color: white;
+	border: 0px solid #FBC02D;
+	border-radius: 0.3em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.container-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.link-register {
+	color: blue;
+	text-decoration: none;
+	margin-top: 1em;
+}
+
+/* ------------ Login ------------ */
+
+.main-login {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-top: 9.5625em;
+}
+
+.main-login h1 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+	font-size: 2em;
+	font-weight: 400;
+	color: #FBC02D;
+}
+
+.form-login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1em;
+}
+
+.form-login > input {
+	width: 28.125em;
+	height: 2.5em;
+	border-radius: 0.3em;
+	border: 1px solid black;
+}
+
+.form-login > button {
+	width: 12.875em;
+	height: 2.5em;
+	background-color: #FBC02D;
+	color: white;
+	border: 0px solid #FBC02D;
+	border-radius: 0.3em;
+	margin-top: 1em;
+}
+
+/* ------------ Images Detail ------------ */
+
+.images{
+	display: grid;
+	grid-template-columns: 50% 25% 25%;	
+}
+.carrusel{
+	display: none;
+}
+.images img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+.one{
+	grid-column-start: 1;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	padding: 5px;
+}
+
+.two{
+	grid-column-start: 2;
+	padding: 5px;
+}
+
+.three{
+	grid-column-start: 3;
+	padding: 5px;
+}
+
+.four{
+	grid-column-start: 2;
+	padding: 5px;
+}
+
+.five{
+	grid-column-start: 3;
+	padding: 5px;
+	text-align: right;
+}
+
+.five a{
+	color: white;
+}
+
+.verMas {
+	
+	top: 50%;
+	left: 50%;
+	transform: translate(-5%, -200%);
+}
+
+/* ------------ Politicas ------------ */
+
+.politicas{
+	margin-top: 5em;
+	margin-bottom: 3em;
+}
+
+.contenedorPoliticas{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;	
+}
+
+.contenedorPoliticas div{
+	padding-right:0.5em ;
+}
+/* ------------ Tablet ------------ */
+.form-login > .link-login {
+	text-decoration: none;
+	color: blue;
+	font-size: 0.9em;
+}
+
+/* ------------ User List ------------ */
+
+.userList-main {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-top: 9.5625em;
+}
+
+/* ------------ Add Category ------------ */
+
+.addCategory-main {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-top: 4.5625em;
+}
+
+.addCategory-main > .span-volver {
+	font-size: 1em;
+	margin-right: 1em;
+	text-align: right;
+	text-decoration: underline;
+	color: #FBC02D;
+	cursor: pointer;
+}
+
+.addCategory-main > h1 {
+	margin-top: 2em;
+	margin-bottom: 1em;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 400;
+	color: #FBC02D;
+}
+
+.form-category {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1em;
+}
+
+.form-category > input{
+	width: 28.125em;
+	height: 2.5em;
+	border-radius: 0.3em;
+	border: 1px solid black;
+}
+
+.form-category > button {
+	width: 12.875em;
+	height: 2.5em;
+	background-color: #FBC02D;
+	color: white;
+	border: 0px solid #FBC02D;
+	border-radius: 0.3em;
+	margin-top: 1em;
+}
+
+
+/* ------------ Products ------------ */
+
+.main-products {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-top: 6.5625em;
+}
+
+.main-products > .span-volver {
+	font-size: 1em;
+	margin-right: 1em;
+	text-align: right;
+	text-decoration: underline;
+	color: #FBC02D;
+	cursor: pointer;
+}
+
+.main-products > h1 {
+	margin-top: 2em;
+	margin-bottom: 1em;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 400;
+	color: #FBC02D;
+}
+
+.each-product {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border: 1px solid black;
+	border-radius: 0.3em;
+	margin: 1em;
+	box-shadow: 0px 2px rgb(192, 192, 192);
+}
+
+.each-product > p {
+	font-size: 1em;
+	color: #383B58;
+} 
+
+.each-product > button {
+	height: 2.5em;
+	padding: 0 1em 0 1em;
+	background-color: #FBC02D;
+	border: 1px solid #FBC02D;
+	border-radius: 0.3em;
+	cursor: pointer;
+}
+
+/* ------------------------ Tablet ------------------------*/
+
+@media (min-width: 656px) and (max-width: 1007px) {
+	/* ------------ Header ------------ */
+
+	.menu {
+		display:flex;
+		flex-direction: column;
+	}
+
+	.material-symbols-outlined {
+		display: none;
+	}
+
+	/* ------------ Search and Calendar ------------ */
+
+	.search-input {
+		width: 15.875em;
+	}
+
+	.search-div>h1 {
+		font-size: 1.8em;
+	}
+
+	/* ------------ Search by Category ------------ */
+
+	.search-category {
+		padding: 1.7em 0.6em 2.7em 0.6em;
+	}
+
+	.search-category .category-cards {
+		gap: 1.25em;
+		margin-top: 1.875em;
+	}
+
+	/* ------------ Recomendations ------------ */
+
+	.recomendations {
+		padding: 1.7em 0.6em 2.7em 0.6em;
+	}
+
+	.recomendations .recomendation-cards {
+		gap: 1.25em;
+		margin-top: 1.875em;
+	}
+
+	.div-cardRecomend .img-cardRecomend > img {
+		width: 19.375em;
+	}
+
+	.div-cardRecomend .info-cardRecomend > h3 {
+		margin-top: 0;
+	}
+
+	/* ------------ Add Product ------------ */
+
+	.container-addProduct {
+		margin-top: 7.5626em;
+	}
+
+	.form-addProduct {
+		gap: 0.5em;
+	}
+
+	/* ------------ Login ------------ */
+
+	.main-login {
+		margin-top: 19.5256em;
+	}
+
+	/* ------------ Register ------------ */
+
+	.register-main {
+		margin-top: 15.5625em
+	}
+
+	.form-registry input {
+		width: 23.125em;
+	}
+
+	.container-fieldTwo > select{
+		width: 23.500em;
+	}
+
+	.container-button > a {
+		margin-top: 2em;
+	}
+
+	/*------------ Detail ------------*/
+	
+	.detail-main p {
+		margin: 0.5px;
+	}
+
+	.images {
+		display: none;
+		
+	}
+
+	.carrusel {
+		display: block;
+	}
+
+	.carrusel-container {
+		max-width: 700px;
+		margin:0 auto;
+	}
+
+	.carrusel-container img{
+		max-width: 100%;
+		height: auto;
+	}
+
+	.caracteristicas > p {
+		margin-top: 1em;
+	}
+
+	.caracteristicas > ol {
+		padding-left: 1em;
+	}
+
+	.button-reserva{
+		margin-right: 0;
+	}
+
+	/* ------------  Reserva------------ */
+
+	.one-reserva img {
+		height: 30vh;
+	}
+
+	.detail-main-reserva {
+		flex-direction: column;
+	}
+
+	/* ------------ Politicas Reserva------------ */
+	
+	.contenedorPoliticas-reserva {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		margin-bottom: 2em;
+	}
+	
+		/* ------------ Politicas ------------ */
+
+	.contenedorPoliticas{
+		display: grid;
+		grid-template-columns: 50% 50%;	
+		margin-bottom: 2em;
+	}
+
+	.contenedorPoliticas div{
+		padding-right:0.5em ;
+	}
+		
+
+
+	/* ------------ Add Category ------------ */
+	
+	.addCategory-main {
+		margin-top: 18.5626em;
+	}
+
+}
+
+
+
+/* ------------------------ Mobile ------------------------ */
+
+@media (max-width: 655px) {
+
+	/* ------------ Home ------------ */
+
+	.main-home {
+		margin-top: 7em;
+	}
+
+	/* ------------ Header ------------ */
+
+	.material-symbols-outlined {
+		display: block;
+	}
+
+	.button {
+		display: none;
+	}
+
+	.button.responsive {
+		float: right;
+		display: block;
+	}
+	
+
+	/* ------------ Search and Calendar ------------ */
+
+	.search-div>h1 {
+		padding-left: 1em;
+		padding-right: 1em;
+		font-size: 1.5em;
+	}
+
+	.search-input {
+		width: 27em;
+		color: #7F7F7F;
+
+	}
+
+	.search-button {
+		width: 27.5em;
+		margin-top: 0.3em;
+		margin-left: 0;
+	}
+
+	/* ------------ Search by Category ------------ */
+
+	.search-category {
+		padding-top: 1.7em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+
+	.search-category>h2 {
+		color: #FBC02D;
+	}
+
+	.search-category .category-cards {
+		gap: 1.25em;
+		margin-top: 1.875em;
+	}
+
+
+	/* ------------ Recomendations ------------ */
+
+	.recomendations {
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		padding-top: 2.5em;
+	}
+
+	.recomendations>h2 {
+		color: #FBC02D;
+	}
+
+	.recomendations .recomendation-cards {
+		gap: 1.25em;
+		margin-top: 1.875em;
+	}
+
+	.div-cardRecomend {
+		display: flex;
+		flex-direction: column;
+		/* width: 21.875em;
+		height: 26.875em; */
+	}
+
+	.div-cardRecomend .img-cardRecomend > img {
+		width: 23.375em;
+	}
+
+	.info-cardRecomend {
+		margin-top: 10px;
+	}
+
+	.div-cardRecomend>.info-cardRecomend>h3 {
+		margin: 0 0 10px 10px;
+	}
+
+	.info-cardRecomend>p {
+		margin-top: 1em;
+		margin-left: 10px;
+	}
+
+	.info-cardRecomend>span {
+		top: 0.3em;
+	}
+
+	.info-cardRecomend>span>.punctuationNumber {
+		border: 2px solid #383B58;
+	}
+
+	.info-cardRecomend>button {
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+		margin-left: 4.875em;
+		cursor: pointer;
+	}
+	/* ------------  Reserva------------ */
+
+	.one-reserva {
+		margin: 0 3em 0 3em;
+	}
+
+	.one-reserva img {
+		height: 30vh;
+	}
+
+	.available-dates-reserva{
+		margin-top: 2em;
+		padding: 0;
+	}
+
+	.available-dates-reserva > h2 {
+		margin-left: 2em;
+	}
+
+	.available-dates-reserva > h3 {
+		margin-left: 2.6em;
+		margin-bottom: 1.5em;
+	}
+
+	.form-dataReservation {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.calendar-container-reserva {
+		flex-direction: column;
+	}
+
+	.calendar-container-reserva .button-reserva {
+		margin-left: 0;
+	}
+
+	/* ------------ Politicas Reserva------------ */
+	.politicas-reserva {
+		margin-top: 3em;
+	}
+	.contenedorPoliticas-reserva {
+		display: grid;
+		grid-template-columns: 100%;
+		padding-bottom: 2em;
+		margin: 2em 2em ;
+	}
+
+
+	/* ------------ Politicas ------------ */
+
+	.politicas {
+		margin-top: 3em;
+	}
+
+	.contenedorPoliticas{
+		display: grid;
+		grid-template-columns: 100%;
+		padding-bottom: 2em
+	}
+
+	.contenedorPoliticas div{
+		padding-right:0.5em ;
+	}
+	/* ------------ Add Product ------------ */
+
+	.container-addProduct {
+		margin-top: 6.5625em;
+	}
+
+	.container-addProduct > h1 {
+		margin-top: 1em;
+	}
+
+	.form-addProduct {
+		gap: 0.5em;
+	}
+
+	.form-addProduct > input {
+		width: 24.125em;
+	}
+
+	.form-addProduct > select {
+		width: 24.78em;
+	}
+
+	/* ------------ Register ------------ */
+
+	.form-registry {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.form-registry input {
+		width: 24.125em;
+	}
+
+	.container-fieldTwo > select {
+		width: 24.5em;
+	}
+
+	/* ------------ Login ------------ */
+
+	.main-login {
+		margin-top: 13.5625em;
+	}
+
+	.form-login > input {
+		width: 24.125em;
+	}
+
+	.form-login > .link-login {
+		margin-top: 1em;
+	}
+
+	/* ------------ Detail ------------ */
+
+	.detail-main {
+		margin-top: 6.5625em;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+
+	.detail-main p {
+		margin: 0.5px;
+	}
+	
+
+	.images {
+		display: none;
+
+	}
+	
+	.carrusel {
+		display: block;
+	}
+	
+	.carrusel-container {
+		max-width: auto;
+		margin: 0 auto;
+		
+	}
+	
+	.carrusel-container img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.caracteristicas > p {
+		margin-top: 1em;
+	}
+
+	.caracteristicas > ol {
+		flex-direction: column;
+		gap: 0.5em;
+		padding-left: 1em;
+	}
+
+	.available-dates h3 {
+		margin-bottom: 2em;
+	}
+
+	.reserva-container {
+		flex-wrap: wrap;
+		/* margin-left: 1em; */
+	}
+
+	/* .rdrDateDisplayWrapper {
+		width: 24em;
+	}
+
+	.rdrMonthAndYearWrapper {
+		width: 24em;
+	} */
+
+	.rdrMonth {
+		padding: 0 0 1.666em 0;
+		width: 22.667em;
+	}
+
+	.button-reserva {
+		margin-right: 0;
+		margin-left: 6em;
+	}
+	.detail-main-reserva {
+		display: flex;
+		flex-direction: column;
+	}
+	.calendar-container-reserva{
+		display: flex;
+		justify-content:center ;
+	}
+
+	/* ------------ Add Category ------------ */
+
+	.addCategory-main {
+		margin-top: 14.5625em
+	}
+
+	.form-category > input {
+		width: 24.125em;
+	}
+
+	/* ------------ Reservations ------------ */ 
+
+	.reservations-main {
+		margin-top: 6.5625em;
+	}
+
+	/* ------------ Reservation ------------ */
+
+	.reservation-main {
+		margin-top: 6.5625em;
+	}
+
+}
